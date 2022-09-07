@@ -52,9 +52,11 @@ header {
         height: 100%;
         flex-direction: column;
         align-items: flex-start;
+        border-top-left-radius: 10%;
+        border-bottom-left-radius: 10%;
         // justify-content: center;
         padding-top: $size-xxxhuge;
-        background-color: $primary-color-600;
+        background-color: $primary-color-300;
         overflow: hidden;
         z-index: 1000;
     &.open {
