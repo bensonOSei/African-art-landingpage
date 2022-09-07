@@ -21,6 +21,10 @@
           sub="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur rem ducimus vitae maiores dolorum alias." 
         />        
     </footer>
+    <div class="footnote bg-prim-color-300 ter-color-400 fs-xxs">
+        <p>Developed by <a href="https://www.github.com/bensonOSei">Benson</a></p>
+        <p>Designed by <a href="https://twitter.com/akinbami_elijah">Akinbami Akinsola Elijah</a></p>
+    </div>
 </template>
 
 <script>
@@ -43,7 +47,25 @@ footer {
     height: 30%;
     border-top: 5px solid $secondary-color-500;
     gap: 1rem;
+}
 
+.footnote {
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    padding: $size-s;
+
+    a {
+        color: $tertiary-color-500;
+        font-style: italic;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    p{
+        margin: 0.125rem;
+    }
 }
 
 @media screen and (max-width: 75em) {
