@@ -1,0 +1,85 @@
+// @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,600;0,900;1,300;1,600;1,900&family=Oxanium:wght@200;300;400;500;600;700&family=Rubik:ital,wght@0,400;0,600;0,800;1,400;1,600;1,800&display=swap');
+
+$primary-color-100: #029357;
+$primary-color-200: #00753c;
+$primary-color-300: #025c2f;
+$primary-color-400: #023d27;
+$primary-color-500: #012618;
+$primary-color-600: #011a0c;
+
+$secondary-color-100: #f4e9c5;
+$secondary-color-200: #e4c96f;
+$secondary-color-300: #e3c04c;
+$secondary-color-400: #dcb227;
+$secondary-color-500: #cea10d;
+$secondary-color-600: #a98100;
+
+$tertiary-color-100: #ffff;
+$tertiary-color-200: #e6e2e2;
+$tertiary-color-300: #d5d0d0;
+$tertiary-color-400: #aba8a8;
+$tertiary-color-500: #928f8f;
+$tertiary-color-600: #716e6e;
+
+$alt-color-100: #000000;
+$alt-color-200: #121212;
+$alt-color-300: #1b1a1a;
+$alt-color-400: #242323;
+$alt-color-500: #323131;
+$alt-color-600: #474545;
+
+//* font Variables
+$font-family-primary: "Montserrat", san-serif;
+$font-family-header: $font-family-primary;
+$font-weigth-normal: 400;
+$font-weigth-heavy: 600;
+$font-weigth-heavy-x: 800;
+
+//* Size Variables
+$size-xxxs: 0.625rem;
+$size-xxs: 0.75rem;
+$size-xs: 0.875rem;
+$size-s: 0.9375rem;
+$size-m: 1rem;
+$size-l: 1.125rem;
+$size-xl: 1.25rem;
+$size-xxl: 1.5rem;
+$size-xxxl: 1.75rem;
+$size-huge: 2rem;
+$size-xhuge: 2.125rem;
+$size-xxhuge: 2.5rem;
+$size-xxxhuge: 2.8125rem;
+
+//* Functions
+@mixin gridCenter {
+  display: grid;
+  place-items: center;
+}
+
+@mixin flexCenter($direction) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: $direction;
+}
+
+@mixin fitImage($fit) {
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: $fit;
+  }
+}
+
+@mixin marginCenter($maxWidth, $space) {
+  width: min($maxWidth, 100% - $space);
+  margin-inline: auto;
+}
+
+@mixin responsiveWidth($maxWidth) {
+    width: 100%;
+    max-width: $maxWidth;
+}
+
+@import 'utilityClasses';
+@import 'animations';

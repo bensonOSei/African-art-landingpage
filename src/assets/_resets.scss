@@ -1,0 +1,22 @@
+@import 'variables';
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: $font-family-primary;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+

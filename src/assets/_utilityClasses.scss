@@ -1,0 +1,1361 @@
+/* 
+****************************
+* UTILIY CLASSES
+****************************
+*/
+
+// Font Colors
+.prim-color-100{
+    color: $primary-color-100;
+        &-hover{
+        @extend .prim-color-100;
+
+        &:hover {
+           @extend .prim-color-200;
+        }
+    }
+}
+.prim-color-200{
+    color: $primary-color-200;
+    &-hover{
+        @extend .prim-color-200;
+
+        &:hover {
+           @extend .prim-color-300;
+        }
+    }
+
+}
+.prim-color-300{
+    color: $primary-color-300;
+        &-hover{
+        @extend .prim-color-300;
+
+        &:hover {
+           @extend .prim-color-400;
+        }
+    }
+
+}
+.prim-color-400{
+    color: $primary-color-400;
+        &-hover{
+        @extend .prim-color-400;
+
+        &:hover {
+           @extend .prim-color-500;
+        }
+    }
+
+}
+.prim-color-500{
+    color: $primary-color-500;
+        &-hover{
+        @extend .prim-color-500;
+
+        &:hover {
+           @extend .prim-color-600;
+        }
+    }
+
+}
+.prim-color-600{
+    color: $primary-color-600;
+        &-hover{
+        @extend .prim-color-600;
+
+        &:hover {
+           @extend .prim-color-500;
+        }
+    }
+
+}
+
+.sec-color-100{
+    color: $secondary-color-100;
+        &-hover{
+        @extend .sec-color-100;
+
+        &:hover {
+           @extend .sec-color-200;
+        }
+    }
+
+}
+.sec-color-200{
+    color: $secondary-color-200;
+        &-hover{
+        @extend .sec-color-200;
+
+        &:hover {
+           @extend .sec-color-300;
+        }
+    }
+
+}
+.sec-color-300{
+    color: $secondary-color-300;
+        &-hover{
+        @extend .sec-color-300;
+
+        &:hover {
+           @extend .sec-color-400;
+        }
+    }
+
+}
+.sec-color-400{
+    color: $secondary-color-400;
+        &-hover{
+        @extend .sec-color-400;
+
+        &:hover {
+           @extend .sec-color-500;
+        }
+    }
+
+}
+.sec-color-500{
+    color: $secondary-color-500;
+        &-hover{
+        @extend .sec-color-500;
+
+        &:hover {
+           @extend .sec-color-600;
+        }
+    }
+
+}
+.sec-color-600{
+    color: $secondary-color-600;
+        &-hover{
+        @extend .prim-color-600;
+
+        &:hover {
+           @extend .prim-color-500;
+        }
+    }
+
+}
+
+.ter-color-100{
+    color: $tertiary-color-100;
+        &-hover{
+        @extend .ter-color-100;
+
+        &:hover {
+           @extend .ter-color-200;
+        }
+    }
+
+}
+.ter-color-200{
+    color: $tertiary-color-200;
+        &-hover{
+        @extend .ter-color-200;
+
+        &:hover {
+           @extend .ter-color-300;
+        }
+    }
+
+}
+.ter-color-300{
+    color: $tertiary-color-300;
+        &-hover{
+        @extend .ter-color-300;
+
+        &:hover {
+           @extend .ter-color-400;
+        }
+    }
+
+}
+.ter-color-400{
+    color: $tertiary-color-400;
+        &-hover{
+        @extend .ter-color-400;
+
+        &:hover {
+           @extend .ter-color-500;
+        }
+    }
+
+}
+.ter-color-500{
+    color: $tertiary-color-500;
+        &-hover{
+        @extend .ter-color-500;
+
+        &:hover {
+           @extend .ter-color-600;
+        }
+    }
+
+}
+.ter-color-600{
+    color: $tertiary-color-600;
+        &-hover{
+        @extend .ter-color-600;
+
+        &:hover {
+           @extend .ter-color-500;
+        }
+    }
+
+}
+
+.alt-color-100{
+    color: $alt-color-100;
+        &-hover{
+        @extend .alt-color-100;
+
+        &:hover {
+           @extend .alt-color-200;
+        }
+    }
+
+}
+.alt-color-200{
+    color: $alt-color-200;
+        &-hover{
+        @extend .alt-color-200;
+
+        &:hover {
+           @extend .alt-color-300;
+        }
+    }
+
+}
+
+.alt-color-300{
+    color: $alt-color-300;
+        &-hover{
+        @extend .alt-color-300;
+
+        &:hover {
+           @extend .alt-color-400;
+        }
+    }
+
+}
+.alt-color-400{
+    color: $alt-color-400;
+        &-hover{
+        @extend .alt-color-400;
+
+        &:hover {
+           @extend .alt-color-500;
+        }
+    }
+
+}
+
+.alt-color-500{
+    color: $alt-color-500;
+        &-hover{
+        @extend .alt-color-500;
+
+        &:hover {
+           @extend .alt-color-600;
+        }
+    }
+
+}
+.alt-color-600{
+    color: $alt-color-600;
+        &-hover{
+        @extend .alt-color-600;
+
+        &:hover {
+           @extend .alt-color-500;
+        }
+    }
+
+}
+
+// background Colors
+
+.bg-prim-color-100{
+    background-color: $primary-color-100;
+    &-hover{
+        @extend .bg-prim-color-100;
+
+        &:hover {
+           @extend .bg-prim-color-200;
+        }
+    }
+}
+.bg-prim-color-200{
+    background-color: $primary-color-200;
+    &-hover{
+        @extend .bg-prim-color-200;
+
+        &:hover {
+           @extend .bg-prim-color-300;
+        }
+    }
+
+}
+.bg-prim-color-300{
+    background-color: $primary-color-300;
+        &-hover{
+        @extend .bg-prim-color-300;
+
+        &:hover {
+           @extend .bg-prim-color-400;
+        }
+    }
+
+}
+.bg-prim-color-400{
+    background-color: $primary-color-400;
+        &-hover{
+        @extend .bg-prim-color-400;
+
+        &:hover {
+           @extend .bg-prim-color-500;
+        }
+    }
+
+}
+.bg-prim-color-500{
+    background-color: $primary-color-500;
+        &-hover{
+        @extend .bg-prim-color-500;
+
+        &:hover {
+           @extend .bg-prim-color-600;
+        }
+    }
+
+}
+.bg-prim-color-600{
+    background-color: $primary-color-600;
+        &-hover{
+        @extend .bg-prim-color-600;
+
+        &:hover {
+           @extend .bg-prim-color-500;
+        }
+    }
+
+}
+
+.bg-sec-color-100{
+    background-color: $secondary-color-100;
+        &-hover{
+        @extend .bg-sec-color-100;
+
+        &:hover {
+           @extend .bg-sec-color-200;
+        }
+    }
+
+}
+.bg-sec-color-200{
+    background-color: $secondary-color-200;
+        &-hover{
+        @extend .bg-sec-color-200;
+
+        &:hover {
+           @extend .bg-sec-color-300;
+        }
+    }
+
+}
+.bg-sec-color-300{
+    background-color: $secondary-color-300;
+        &-hover{
+        @extend .bg-sec-color-300;
+
+        &:hover {
+           @extend .bg-sec-color-400;
+        }
+    }
+
+}
+.bg-sec-color-400{
+    background-color: $secondary-color-400;
+        &-hover{
+        @extend .bg-sec-color-400;
+
+        &:hover {
+           @extend .bg-sec-color-500;
+        }
+    }
+
+}
+.bg-sec-color-500{
+    background-color: $secondary-color-500;
+        &-hover{
+        @extend .bg-sec-color-500;
+
+        &:hover {
+           @extend .bg-sec-color-600;
+        }
+    }
+
+}
+.bg-sec-color-600{
+    background-color: $secondary-color-600;
+        &-hover{
+        @extend .bg-prim-color-600;
+
+        &:hover {
+           @extend .bg-prim-color-500;
+        }
+    }
+
+}
+
+.bg-ter-color-100{
+    background-color: $tertiary-color-100;
+        &-hover{
+        @extend .bg-ter-color-100;
+
+        &:hover {
+           @extend .bg-ter-color-200;
+        }
+    }
+
+}
+.bg-ter-color-200{
+    background-color: $tertiary-color-200;
+        &-hover{
+        @extend .bg-ter-color-200;
+
+        &:hover {
+           @extend .bg-ter-color-300;
+        }
+    }
+
+}
+.bg-ter-color-300{
+    background-color: $tertiary-color-300;
+        &-hover{
+        @extend .bg-ter-color-300;
+
+        &:hover {
+           @extend .bg-ter-color-400;
+        }
+    }
+
+}
+.bg-ter-color-400{
+    background-color: $tertiary-color-400;
+        &-hover{
+        @extend .bg-ter-color-400;
+
+        &:hover {
+           @extend .bg-ter-color-500;
+        }
+    }
+
+}
+.bg-ter-color-500{
+    background-color: $tertiary-color-500;
+        &-hover{
+        @extend .bg-ter-color-500;
+
+        &:hover {
+           @extend .bg-ter-color-600;
+        }
+    }
+
+}
+.bg-ter-color-600{
+    background-color: $tertiary-color-600;
+        &-hover{
+        @extend .bg-ter-color-600;
+
+        &:hover {
+           @extend .bg-ter-color-500;
+        }
+    }
+
+}
+
+.bg-alt-color-100{
+    background-color: $alt-color-100;
+        &-hover{
+        @extend .bg-alt-color-100;
+
+        &:hover {
+           @extend .bg-alt-color-200;
+        }
+    }
+
+}
+.bg-alt-color-200{
+    background-color: $alt-color-200;
+        &-hover{
+        @extend .bg-alt-color-200;
+
+        &:hover {
+           @extend .bg-alt-color-300;
+        }
+    }
+
+}
+
+.bg-alt-color-300{
+    background-color: $alt-color-300;
+        &-hover{
+        @extend .bg-alt-color-300;
+
+        &:hover {
+           @extend .bg-alt-color-400;
+        }
+    }
+
+}
+.bg-alt-color-400{
+    background-color: $alt-color-400;
+        &-hover{
+        @extend .bg-alt-color-400;
+
+        &:hover {
+           @extend .bg-alt-color-500;
+        }
+    }
+
+}
+
+.bg-alt-color-500{
+    background-color: $alt-color-500;
+        &-hover{
+        @extend .bg-alt-color-500;
+
+        &:hover {
+           @extend .bg-alt-color-600;
+        }
+    }
+
+}
+.bg-alt-color-600{
+    background-color: $alt-color-600;
+        &-hover{
+        @extend .bg-alt-color-600;
+
+        &:hover {
+           @extend .bg-alt-color-500;
+        }
+    }
+
+}
+
+
+// Font
+.fs-xxxs{
+    font-size: $size-xxxs;
+}
+
+.fs-xxs{
+    font-size: $size-xxs;
+}
+
+.fs-xs{
+    font-size: $size-xs;
+}
+
+.fs-s{
+    font-size: $size-s;
+}
+
+.fs-m{
+    font-size: $size-m;
+}
+
+.fs-l{
+    font-size: $size-l;
+}
+
+.fs-xl{
+    font-size: $size-xl;
+}
+
+.fs-xxl{
+    font-size: $size-xxl;
+}
+
+.fs-xxxl{
+    font-size: $size-xxxl;
+}
+
+.fs-huge{
+    font-size: $size-huge;
+}
+
+.fs-xhuge{
+    font-size: $size-xhuge;
+}
+
+.fs-xxhuge{
+    font-size: $size-xxhuge;
+}
+
+.fs-xxxhuge{
+    font-size: $size-xxxhuge;
+}
+
+// Font weight
+.fw-normal {
+    font-weight: $font-weigth-normal;
+}
+
+.fw-heavy {
+    font-weight: $font-weigth-heavy;
+}
+
+.fw-xheavy {
+    font-weight: $font-weigth-heavy-x;
+}
+
+
+// margin
+.m-auto {
+    margin: auto;
+}
+
+.m-0 {
+    margin: 0;
+}
+
+.m-xxxs{
+    margin: $size-xxxs;
+}
+
+.m-xxs{
+    margin: $size-xxs;
+}
+
+.m-xs{
+    margin: $size-xs;
+}
+
+.m-s{
+    margin: $size-s;
+}
+
+.m-l{
+    margin: $size-l;
+}
+
+
+.m-xl{
+    margin: $size-xl;
+}
+
+.m-xxl{
+    margin: $size-xxl;
+}
+
+.m-xxxl{
+    margin: $size-xxxl;
+}
+
+.m-huge{
+    margin: $size-huge;
+}
+
+.m-xhuge{
+    margin: $size-xhuge;
+}
+
+.m-xxhuge{
+    margin: $size-xxhuge;
+}
+
+.m-xxxhuge{
+    margin: $size-xxxhuge;
+}
+
+// Horizontal maragin
+.m-h-xxxs{
+    margin: $size-xxxs 0 $size-xxxs 0;
+}
+
+.m-h-xxs{
+    margin: $size-xxs 0 $size-xxs 0;
+}
+
+.m-h-xs{
+    margin: $size-xs 0 $size-xs 0;
+}
+
+.m-h-s{
+    margin: $size-s 0 $size-s 0;
+}
+
+.m-h-l{
+    margin: $size-l 0 $size-l 0;
+}
+
+.m-h-xl{
+    margin: $size-xl 0 $size-xl 0;
+}
+
+.m-h-xxl{
+    margin: $size-xxl 0 $size-xxl 0;
+}
+
+.m-h-xxxl{
+    margin: $size-xxxl 0 $size-xxxl 0;
+}
+
+.m-h-huge{
+    margin: $size-huge 0 $size-huge 0;
+}
+
+.m-h-xhuge{
+    margin: $size-xhuge 0 $size-xhuge 0;
+}
+
+.m-h-xxhuge{
+    margin: $size-xxhuge 0 $size-xxhuge 0;
+}
+
+.m-h-xxxhuge{
+    margin: $size-xxxhuge 0 $size-xxxhuge 0;
+}
+
+
+// Verrtical margin
+.m-v-xxxs{
+    margin:0 $size-xxxs 0 $size-xxxs;
+}
+
+.m-v-xxs{
+    margin: 0 $size-xxs  0 $size-xxs;
+}
+
+.m-v-xs{
+    margin: 0 $size-xs 0 $size-xs;
+}
+
+.m-v-s{
+    margin: 0 $size-s 0 $size-s;
+}
+
+.m-v-l{
+    margin: 0 $size-l 0 $size-l;
+}
+
+.m-v-xl{
+    margin: 0 $size-xl 0 $size-xl;
+}
+
+.m-v-xxl{
+    margin: 0 $size-xxl 0 $size-xxl;
+}
+
+.m-v-xxxl{
+    margin: 0 $size-xxxl 0 $size-xxxl;
+}
+
+.m-v-huge{
+    margin: 0 $size-huge 0 $size-huge;
+}
+
+.m-v-xhuge{
+    margin: 0 $size-xhuge 0 $size-xhuge;
+}
+
+.m-v-xxhuge{
+    margin: 0 $size-xxhuge 0 $size-xxhuge;
+}
+
+.m-v-xxxhuge{
+    margin: 0 $size-xxxhuge 0 $size-xxxhuge;
+}
+
+// Margin top
+.m-t-0 {
+    margin-top: 0;
+}
+
+.m-t-xxxs{
+    margin-top: $size-xxxs;
+}
+
+.m-t-xxs{
+    margin-top: $size-xxs;
+}
+
+.m-t-xs{
+    margin-top: $size-xs;
+}
+
+.m-t-s{
+    margin-top: $size-s;
+}
+
+.m-t-l{
+    margin-top: $size-l;
+}
+
+
+.m-t-xl{
+    margin-top: $size-xl;
+}
+
+.m-t-xxl{
+    margin-top: $size-xxl;
+}
+
+.m-t-xxxl{
+    margin-top: $size-xxxl;
+}
+
+.m-t-huge{
+    margin-top: $size-huge;
+}
+
+.m-t-xhuge{
+    margin-top: $size-xhuge;
+}
+
+.m-t-xxhuge{
+    margin-top: $size-xxhuge;
+}
+
+.m-t-xxxhuge{
+    margin-top: $size-xxxhuge;
+}
+
+
+// maargin bottom
+.m-b-0 {
+    margin-bottom: 0;
+}
+
+.m-b-xxxs{
+    margin-bottom: $size-xxxs;
+}
+
+.m-b-xxs{
+    margin-bottom: $size-xxs;
+}
+
+.m-b-xs{
+    margin-bottom: $size-xs;
+}
+
+.m-b-s{
+    margin-bottom: $size-s;
+}
+
+.m-b-l{
+    margin-bottom: $size-l;
+}
+
+
+.m-b-xl{
+    margin-bottom: $size-xl;
+}
+
+.m-b-xxl{
+    margin-bottom: $size-xxl;
+}
+
+.m-b-xxxl{
+    margin-bottom: $size-xxxl;
+}
+
+.m-b-huge{
+    margin-bottom: $size-huge;
+}
+
+.m-b-xhuge{
+    margin-bottom: $size-xhuge;
+}
+
+.m-b-xxhuge{
+    margin-bottom: $size-xxhuge;
+}
+
+.m-b-xxxhuge{
+    margin-bottom: $size-xxxhuge;
+}
+
+// margin left
+.m-l-0 {
+    margin-left: 0;
+}
+
+.m-l-xxxs{
+    margin-left: $size-xxxs;
+}
+
+.m-l-xxs{
+    margin-left: $size-xxs;
+}
+
+.m-l-xs{
+    margin-left: $size-xs;
+}
+
+.m-l-s{
+    margin-left: $size-s;
+}
+
+.m-l-l{
+    margin-left: $size-l;
+}
+
+
+.m-l-xl{
+    margin-left: $size-xl;
+}
+
+.m-l-xxl{
+    margin-left: $size-xxl;
+}
+
+.m-l-xxxl{
+    margin-left: $size-xxxl;
+}
+
+.m-l-huge{
+    margin-left: $size-huge;
+}
+
+.m-l-xhuge{
+    margin-left: $size-xhuge;
+}
+
+.m-l-xxhuge{
+    margin-left: $size-xxhuge;
+}
+
+.m-l-xxxhuge{
+    margin-left: $size-xxxhuge;
+}
+
+// margin right
+.m-r-0 {
+    margin-right: 0;
+}
+
+.m-r-xxxs{
+    margin-right: $size-xxxs;
+}
+
+.m-r-xxs{
+    margin-right: $size-xxs;
+}
+
+.m-r-xs{
+    margin-right: $size-xs;
+}
+
+.m-r-s{
+    margin-right: $size-s;
+}
+
+.m-r-l{
+    margin-right: $size-l;
+}
+
+
+.m-r-xl{
+    margin-right: $size-xl;
+}
+
+.m-r-xxl{
+    margin-right: $size-xxl;
+}
+
+.m-r-xxxl{
+    margin-right: $size-xxxl;
+}
+
+.m-r-huge{
+    margin-right: $size-huge;
+}
+
+.m-r-xhuge{
+    margin-right: $size-xhuge;
+}
+
+.m-r-xxhuge{
+    margin-right: $size-xxhuge;
+}
+
+.m-r-xxxhuge{
+    margin-right: $size-xxxhuge;
+}
+// margin
+.p-auto {
+    padding: auto;
+}
+
+.p-0 {
+    padding: 0;
+}
+
+.p-xxxs{
+    padding: $size-xxxs;
+}
+
+.p-xxs{
+    padding: $size-xxs;
+}
+
+.p-xs{
+    padding: $size-xs;
+}
+
+.p-s{
+    padding: $size-s;
+}
+
+.p-l{
+    padding: $size-l;
+}
+
+
+.p-xl{
+    padding: $size-xl;
+}
+
+.p-xxl{
+    padding: $size-xxl;
+}
+
+.p-xxxl{
+    padding: $size-xxxl;
+}
+
+.p-huge{
+    padding: $size-huge;
+}
+
+.p-xhuge{
+    padding: $size-xhuge;
+}
+
+.p-xxhuge{
+    padding: $size-xxhuge;
+}
+
+.p-xxxhuge{
+    padding: $size-xxxhuge;
+}
+
+// Horizontal maragin
+.p-h-xxxs{
+    padding: $size-xxxs 0 $size-xxxs 0;
+}
+
+.p-h-xxs{
+    padding: $size-xxs 0 $size-xxs 0;
+}
+
+.p-h-xs{
+    padding: $size-xs 0 $size-xs 0;
+}
+
+.p-h-s{
+    padding: $size-s 0 $size-s 0;
+}
+
+.p-h-l{
+    padding: $size-l 0 $size-l 0;
+}
+
+.p-h-xl{
+    padding: $size-xl 0 $size-xl 0;
+}
+
+.p-h-xxl{
+    padding: $size-xxl 0 $size-xxl 0;
+}
+
+.p-h-xxxl{
+    padding: $size-xxxl 0 $size-xxxl 0;
+}
+
+.p-h-huge{
+    padding: $size-huge 0 $size-huge 0;
+}
+
+.p-h-xhuge{
+    padding: $size-xhuge 0 $size-xhuge 0;
+}
+
+.p-h-xxhuge{
+    padding: $size-xxhuge 0 $size-xxhuge 0;
+}
+
+.p-h-xxxhuge{
+    padding: $size-xxxhuge 0 $size-xxxhuge 0;
+}
+
+
+// Verrtical margin
+.p-v-xxxs{
+    padding:0 $size-xxxs 0 $size-xxxs;
+}
+
+.p-v-xxs{
+    padding: 0 $size-xxs  0 $size-xxs;
+}
+
+.p-v-xs{
+    padding: 0 $size-xs 0 $size-xs;
+}
+
+.p-v-s{
+    padding: 0 $size-s 0 $size-s;
+}
+
+.p-v-l{
+    padding: 0 $size-l 0 $size-l;
+}
+
+.p-v-xl{
+    padding: 0 $size-xl 0 $size-xl;
+}
+
+.p-v-xxl{
+    padding: 0 $size-xxl 0 $size-xxl;
+}
+
+.p-v-xxxl{
+    padding: 0 $size-xxxl 0 $size-xxxl;
+}
+
+.p-v-huge{
+    padding: 0 $size-huge 0 $size-huge;
+}
+
+.p-v-xhuge{
+    padding: 0 $size-xhuge 0 $size-xhuge;
+}
+
+.p-v-xxhuge{
+    padding: 0 $size-xxhuge 0 $size-xxhuge;
+}
+
+.p-v-xxxhuge{
+    padding: 0 $size-xxxhuge 0 $size-xxxhuge;
+}
+
+// Margin top
+.p-t-0 {
+    padding-top: 0;
+}
+
+.p-t-xxxs{
+    padding-top: $size-xxxs;
+}
+
+.p-t-xxs{
+    padding-top: $size-xxs;
+}
+
+.p-t-xs{
+    padding-top: $size-xs;
+}
+
+.p-t-s{
+    padding-top: $size-s;
+}
+
+.p-t-l{
+    padding-top: $size-l;
+}
+
+
+.p-t-xl{
+    padding-top: $size-xl;
+}
+
+.p-t-xxl{
+    padding-top: $size-xxl;
+}
+
+.p-t-xxxl{
+    padding-top: $size-xxxl;
+}
+
+.p-t-huge{
+    padding-top: $size-huge;
+}
+
+.p-t-xhuge{
+    padding-top: $size-xhuge;
+}
+
+.p-t-xxhuge{
+    padding-top: $size-xxhuge;
+}
+
+.p-t-xxxhuge{
+    padding-top: $size-xxxhuge;
+}
+
+
+// maargin bottom
+.p-b-0 {
+    padding-bottom: 0;
+}
+
+.p-b-xxxs{
+    padding-bottom: $size-xxxs;
+}
+
+.p-b-xxs{
+    padding-bottom: $size-xxs;
+}
+
+.p-b-xs{
+    padding-bottom: $size-xs;
+}
+
+.p-b-s{
+    padding-bottom: $size-s;
+}
+
+.p-b-l{
+    padding-bottom: $size-l;
+}
+
+
+.p-b-xl{
+    padding-bottom: $size-xl;
+}
+
+.p-b-xxl{
+    padding-bottom: $size-xxl;
+}
+
+.p-b-xxxl{
+    padding-bottom: $size-xxxl;
+}
+
+.p-b-huge{
+    padding-bottom: $size-huge;
+}
+
+.p-b-xhuge{
+    padding-bottom: $size-xhuge;
+}
+
+.p-b-xxhuge{
+    padding-bottom: $size-xxhuge;
+}
+
+.p-b-xxxhuge{
+    padding-bottom: $size-xxxhuge;
+}
+
+// margin left
+.p-l-0 {
+    padding-left: 0;
+}
+
+.p-l-xxxs{
+    padding-left: $size-xxxs;
+}
+
+.p-l-xxs{
+    padding-left: $size-xxs;
+}
+
+.p-l-xs{
+    padding-left: $size-xs;
+}
+
+.p-l-s{
+    padding-left: $size-s;
+}
+
+.p-l-l{
+    padding-left: $size-l;
+}
+
+
+.p-l-xl{
+    padding-left: $size-xl;
+}
+
+.p-l-xxl{
+    padding-left: $size-xxl;
+}
+
+.p-l-xxxl{
+    padding-left: $size-xxxl;
+}
+
+.p-l-huge{
+    padding-left: $size-huge;
+}
+
+.p-l-xhuge{
+    padding-left: $size-xhuge;
+}
+
+.p-l-xxhuge{
+    padding-left: $size-xxhuge;
+}
+
+.p-l-xxxhuge{
+    padding-left: $size-xxxhuge;
+}
+
+// margin right
+.p-r-0 {
+    padding-right: 0;
+}
+
+.p-r-xxxs{
+    padding-right: $size-xxxs;
+}
+
+.p-r-xxs{
+    padding-right: $size-xxs;
+}
+
+.p-r-xs{
+    padding-right: $size-xs;
+}
+
+.p-r-s{
+    padding-right: $size-s;
+}
+
+.p-r-l{
+    padding-right: $size-l;
+}
+
+
+.p-r-xl{
+    padding-right: $size-xl;
+}
+
+.p-r-xxl{
+    padding-right: $size-xxl;
+}
+
+.p-r-xxxl{
+    padding-right: $size-xxxl;
+}
+
+.p-r-huge{
+    padding-right: $size-huge;
+}
+
+.p-r-xhuge{
+    padding-right: $size-xhuge;
+}
+
+.p-r-xxhuge{
+    padding-right: $size-xxhuge;
+}
+
+.p-r-xxxhuge{
+    padding-right: $size-xxxhuge;
+}
